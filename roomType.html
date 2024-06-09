@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/tab.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roomType.css">
+
+    <!-- <script type="module" src="js/header.js" defer></script>
+    <script type="module" src="js/tab.js" defer></script> -->
+</head>
+<body>
+    <!-- header -->
+    <div class="backPan"></div>
+    <header>
+        <div class="headerWrap">
+            <div class="logoGnbBox">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logoWhite.png" class="logoImg" alt="로고">
+                    </a>
+                </h1>
+                <div class="gnbMenu">
+                    <ul class="gnb">
+                        <li class="depth1">
+                            <a href="./roomDetail.html">리조트안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">롯데리조트속초</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">롯데리조트부여</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">제주 아트빌라스</a>
+                                </li>
+                                <li> 
+                                    <a href="./roomDetail.html">롯데아라이리조트</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">테마파크</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">다이닝</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomDetail.html">스페셜오퍼</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">
+                                        이벤트
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">
+                                        패키지.프로모션
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">
+                                        쿠폰구매
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomDetail.html">세미나&웨딩</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">세미나&웨딩</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">예약문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomDetail.html">고객센터</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">리조트뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">고객의소리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomDetail.html">분양안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">분양회원뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">분양회원모집</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">분양상품.이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">분양상담신청</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">프로모션 분양상담 신청</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomDetail.html">Travel;brary</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomDetail.html">트래브러리</a>
+                                </li>
+                                <li>
+                                    <a href="./roomDetail.html">트래브러리 엑티비티</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bgGnb"></div>
+                </div>
+            </div>
+            <a class="login">로그인</a>
+            <div class="hamBtn">
+                <div class="line" id="line_top"></div>
+                <div class="line" id="line_mid"></div>
+                <div class="line" id="line_bot"></div>
+            </div>
+            <div class="mMenu">
+                <div class="userInfo">
+                    <a href="./roomDetail.html" class="userInfo__signUp">회원가입</a>
+                    <a href="./roomDetail.html" class="userInfo__login">로그인</a>
+                </div>
+                <ul>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">리조트안내</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">롯데리조트속초</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">롯데리조트부여</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">제주 아트빌라스</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">롯데아라이리조트</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">테마파크</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">다이닝</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">스페셜오퍼</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">패키지.프로모션</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">쿠폰구매</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">세미나&웨딩</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">세미나&웨딩</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">예약문의</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">고객센터</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">리조트뉴스</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">고객의소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">분양안내</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">분양회원뉴스</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">분양회원모집</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">분양상품.이용안내</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">분양상담신청</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">프로모션 분양상담 신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomDetail.html">Travel;brary</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomDetail.html">트래브러리</a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">트래브러리 엑티비티</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="mainPage roomTypePage">
+        <!-- mainBanner -->
+        <section>
+            <div class="roomType__banner" style="position:relative;">
+                <div class="swiper mySwiper bannerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner banner1">
+                            <img src="images/pc_roomBanner/pc_roomBanner1.jpg" alt="">
+                            <div class="bannerTxt">LOTTE RESORT SOKCHO</div>
+                        </div>
+                        <div class="swiper-slide banner banner2">
+                            <img src="images/pc_roomBanner/pc_roomBanner2.jpg" alt="">
+                            <div class="bannerTxt">LOTTE RESORT BUYEO</div>
+                        </div>
+                        <div class="swiper-slide banner banner3">
+                            <img src="images/pc_roomBanner/pc_roomBanner3.jpg" alt="">
+                            <div class="bannerTxt">JEJU ARTVILLAS</div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- listTab -->
+        <section>
+            <div class="roomType roomType__list mx-1280 hScrollEvent hScrollEvent__mobile">
+                <div class="my-25">
+                    <ul class="tabType2">
+                        <li>
+                            <a class="active">롯데리조트속초</a>
+                        </li>
+                        <li>
+                            <a>롯데리조트부여</a>
+                        </li>
+                        <li>
+                            <a>제주 아트빌라스</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 롯데 속초-->
+        <div class="roomType__content active">
+            <!-- 속초 introSlide -->
+            <section>
+                <div class="roomType roomType__introSlide mx-1280">
+                    <div class="swiper mySwiper introSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide banner banner1">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>자연이 만든 프리미엄,</div>
+                                        <div>완벽한 뷰</div>
+                                    </div>
+                                    <div class="desc">
+                                        롯데 리조트 제주는 여행과 휴식을 꿈꾸는 누구에게나 
+                                        특별한 경험을 선사하는 리조트로 3면이 바다로 둘러싸인 
+                                        천혜의 위치해 모든 객실에서 푸른 바다를 보실 수 있습니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner2">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>자연이 만든 프리미엄,</div>
+                                        <div>완벽한 뷰</div>
+                                    </div>
+                                    <div class="desc">
+                                        롯데 리조트 제주는 여행과 휴식을 꿈꾸는 누구에게나 
+                                        특별한 경험을 선사하는 리조트로 3면이 바다로 둘러싸인 
+                                        천혜의 위치해 모든 객실에서 푸른 바다를 보실 수 있습니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner3">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>자연이 만든 프리미엄,</div>
+                                        <div>완벽한 뷰</div>
+                                    </div>
+                                    <div class="desc">
+                                        롯데 리조트 제주는 여행과 휴식을 꿈꾸는 누구에게나 
+                                        특별한 경험을 선사하는 리조트로 3면이 바다로 둘러싸인 
+                                        천혜의 위치해 모든 객실에서 푸른 바다를 보실 수 있습니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 객실타입 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div class="h3 head">객실 타입</div>
+                    <div class="roomType__list">
+                        <!-- 롯데리조트 속초 list -->
+                        <ul class="listType4">
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom1.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">속초도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom4.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom5.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom6.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 편의시설 -->
+            <section>
+                <div class="mx-1280 roomType">
+                    <h3 class="h3 head">편의시설</h3>
+                    <div class="facilitiesSwiperBox">
+                        <div class="swiper mySwiper facilitiesSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>피트니스센터</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            속초의 푸른 바다를 내려다보며 운동을 즐길 수 있는 곳으로
+                                            투숙객 누구나 이용하실 수 있습니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>표제목</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>2층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>7:00 ~ 22:00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>셀프세탁실</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            세탁기 및 건조기를 사용할 수 있는 편의시설입니다.
+                                            신용카드 결제만 가능합니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>지하1층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>24시간</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비고</th>
+                                                    <td>033-123-4566</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>세븐일레븐</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            간단한 생활용품을 비롯해 먹거리를 구매할 수 있는 편의 시설입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>지하1층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>24시간 연중무휴</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 투숙객 여행지도 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">투숙객 추천 여행 지도</h3>
+                        <div class="travelMap">
+                            <img src="images/img/imgTravelbraryMap.jpg" class="travelMap__pc" alt="">
+                            <img src="images/img/imgTravelbraryMap__mobile.jpg" class="travelMap__mobile" alt="">
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    롯데리조트 투숙객 인기 여행지를 
+                                    맞춤 조건별로 더 알아보고 싶다면?
+                                    <div>
+                                        <button class="btn btnBgBlack btnSizeL-2 btnTypeR" style="width:200px;">Travel;Graphy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 오시는 길 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">리조트 위치 안내</h3>
+                        <div>
+                            <ul class="tabType1">
+                                <li class="active">
+                                    <button>자동차로 오시는 길</button>
+                                </li>
+                                <li>
+                                    <button>버스로 오시는 길</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- 자동차 -->
+                            <div class="contactMapInfo contactMapInfo__buyeo car active">
+                                <div class="contactMapTxt">
+                                    <div>주소 : 강원도 속초시 대포항길 186</div>
+                                    <div>출발지 : 서울 <span class="txt-gray">(약 2시간 소요)</span></div>
+                                </div>
+                                <div class="contactMapRoot contactMapRoot__sokcho">
+                                    <img src="images/img/imgSokchoRoad.png" alt="">
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                            <!-- 버스 -->
+                            <div class="contactMapInfo contactMapInfo__buyeo bus">
+                                <div>
+                                    <div class="title">시외버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="title">고속버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 롯데 부여-->
+        <div class="roomType__content">
+            <!-- 부여 소개 slide -->
+            <section>
+                <div class="roomType roomType__introSlide mx-1280">
+                    <div class="swiper mySwiper introSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide banner banner1">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>세계가 감동할 시설과 서비스</div>
+                                    </div>
+                                    <div class="desc">
+                                        백제의 섬세한 미의식과 예술의 정수를 이어받은 부여에 위치한 
+                                        롯데리조트부여는 역사 문화 탐방부터 레저와 휴식,미식과 골프까지
+                                        한번에 즐길 수 있는 유기적인 여행 콘텐츠를 보유했습니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner2-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner2">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>사계절 내내 즐기는</div>
+                                        <div>짜릿한 즐거움</div>
+                                    </div>
+                                    <div class="desc">
+                                        롯데리조트부여의 아쿠아가든은 리조트 밖으로 나가지 않고도 하루
+                                        종일 에너지와 웃음이 넘치는 시간을 충분히 즐길 수 있게 하는 
+                                        환상적인 물놀이 시설입니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner2-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner3">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>생생하게 체험하는 시간 여행</div>
+                                    </div>
+                                    <div class="desc">
+                                        국내 최초로 삼국시대 백제 왕궁을 재현한 백제문화단지는 백제의
+                                        역사와 예술을 생생하게 느낄 수 있는 역사 여행지입니다. 오랜 세월
+                                        별처럼 반짝이며 내려온 부여의 이야기는 여행을 더욱 풍성하게 만드는
+                                        요소입니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner2-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 객실 타입 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div class="h3 head">객실 타입</div>
+                    <div class="roomType__list">
+                        <!-- 롯데리조트 부여 list -->
+                        <ul class="listType4">
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-1.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">부여도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-2.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-3.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-4.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-5.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-6.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-7.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-8.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom2-9.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 편의시설 -->
+            <section>
+                <div class="mx-1280 roomType">
+                    <h3 class="h3 head">편의시설</h3>
+                    <div class="facilitiesSwiperBox">
+                        <div class="swiper mySwiper facilitiesSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>포토박스(Self Photo Booth)</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            친구,연인,가족들과 함께 소중한 추억을 남길 수 있는 포토박스입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>표제목</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>지하 1층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>24시간</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner2-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>로그온(게임존)</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            어른부터 아이까지 다양한 연령대가 함께 신나게 즐길 수 있는 대형
+                                            패밀리 게임존 입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>지하1층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>09:00 ~ 24:00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비고</th>
+                                                    <td>22:00 이후,18세 미만의 청소년의 경우 보호자 동반 없이 이용 불가</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>테이스트파크</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            아쿠아가든을 이용하면서 간식을 즐기며 휴식을 취할 수 있는
+                                            공간입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>아쿠아가든 실내</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>비수기 : 11:00 ~ 17:00 / 성수기 : 11:00 ~ 19:00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner2-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 투숙객 여행지도 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">투숙객 추천 여행 지도</h3>
+                        <div class="travelMap">
+                            <img src="images/img/imgTravelbraryMapBuyeo.jpg" class="travelMap__pc" alt="">
+                            <img src="images/img/imgTravelbraryMap__mobile.jpg" class="travelMap__mobile" alt="">
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    롯데리조트 투숙객 인기 여행지를 
+                                    맞춤 조건별로 더 알아보고 싶다면?
+                                    <div>
+                                        <button class="btn btnBgBlack btnSizeL-2 btnTypeR" style="width:200px;">Travel;Graphy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 오시는 길 -->
+            <!-- <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">리조트 위치 안내</h3>
+                        <div>
+                            <ul class="tabType1">
+                                <li class="active">
+                                    <button>자동차로 오시는 길</button>
+                                </li>
+                                <li>
+                                    <button>버스로 오시는 길</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            자동차
+                            <div class="contactMapInfo contactMapInfo__sokcho car active">
+                                <div class="contactMapTxt">
+                                    <div>주소 : 강원도 속초시 대포항길 186</div>
+                                    <div>출발지 : 서울 <span class="txt-gray">(약 2시간 소요)</span></div>
+                                </div>
+                                <div class="contactMapRoot contactMapRoot__sokcho">
+                                    <img src="images/img/imgSokchoRoad.png" alt="">
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                            버스
+                            <div class="contactMapInfo contactMapInfo__sokcho bus">
+                                <div>
+                                    <div class="title">시외버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="title">고속버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+        <!-- 롯데 제주-->
+        <div class="roomType__content">
+            <!-- 제주 소개 slide -->
+            <section>
+                <div class="roomType roomType__introSlide mx-1280">
+                    <div class="swiper mySwiper introSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide banner banner1">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>도미니크 페로</div>
+                                    </div>
+                                    <div class="desc">
+                                        제주를 닮은 곡선으로 재창조된 풍경!내부에서도 자연을 충분히 느낄 수
+                                        있도록 중정,선큰,테라스를 디자인하였고 원형과 곡선의 패턴을 살려
+                                        이국적이면서도 유니크한 디자인 제안합니다. 제주의 오름을 
+                                        연상시키는 곡선을 따라 외부의 자연이 내부로 이어지는 듯한 건축이
+                                        인상적입니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner3-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner2">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>이종호</div>
+                                    </div>
+                                    <div class="desc">
+                                        자연의 숨결을 담은 생명의 집, 제주의 바람을 집으로 청하다! 제주의
+                                        자연을 지니는 바람이 집의 안팎을 자연스레 오갈 수 있도록 공기가
+                                        지나는 통로인 기공을 디자인에 적용했습니다.사각 형태로 배치된 집의
+                                        중정과 선큰가든을 통해 천해의 제주 자연환경이 집 안으로 성큼 들어온
+                                        듯한 공간 연출이 특징입니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner3-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide banner banner3">
+                                <div class="introSwiper__txt">
+                                    <div class="title">
+                                        <div>켄코 쿠마</div>
+                                    </div>
+                                    <div class="desc">
+                                        제주의 오름을 그대로 옮겨 놓은 집,오름의 곡선으로 지붕을 잇다!주변
+                                        풍경과 조화되는 유기적인 건축은 자연스럽게 어울리면서도 생명을 
+                                        머금은 듯한 인상을 연출합니다.하나의 출입구를 가진 쿨덱삭(cul-de-sac)
+                                        구조와 아름다운 주장절리 패턴을 조화롭게 담았습니다.
+                                    </div>
+                                </div>
+                                <div class="introSwiper__thumb">
+                                    <img src="images/introBanner/introBanner3-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 객실 타입 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div class="h3 head">객실 타입</div>
+                    <div class="roomType__list">
+                        <!-- 제주아트빌라스 list -->
+                        <ul class="listType4">
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-1.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">제주도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-2.jpg" alt="">
+                                    </div>
+                                    <div class="listType4__content">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button href="" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-3.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-4.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-5.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-6.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-7.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom3-8.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                            <li>
+                                <a href="./roomDetail.html">
+                                    <div class="listType4__thumb">
+                                        <img src="images/img/imgRoom1.jpg" alt="">
+                                    </div>
+                                    </a><div class="listType4__content"><a href="./roomDetail.html">
+                                        <div class="title">도미니크 페로 74평형 (3룸)</div>
+                                        <div class="">
+                                            <div class="desc">
+                                                <div>6인 투숙에 적합하며 2층에 현관이 있는 객실</div>
+                                                <div class="headCount">기준 인원 : 6 / 최대 인원 : 6</div>
+                                            </div>
+                                            <div class="priceWrap mt-20">
+                                                <b class="txt-primary">로그인 시</b>
+                                                <div>
+                                                    <div class="txt-right">1박기준<span>VAT포함</span></div>
+                                                    <div class="price"><span>840,000원~</span><b class="txt-primary">714,000</b>원~</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a><a href="./roomDetail.html" class="btn btnSizeL-2 btnOutlineGray mt-20" style="width:100%;">객실 선택하기</a>
+                                    </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- 편의시설 -->
+            <section>
+                <div class="mx-1280 roomType">
+                    <h3 class="h3 head">편의시설</h3>
+                    <div class="facilitiesSwiperBox">
+                        <div class="swiper mySwiper facilitiesSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>올레정원</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            아름다운 제주의 자연을 담을 올레정원 산책로입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>표제목</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>c블럭,E블럭 옆</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>24시간</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>문의전화</th>
+                                                    <td>000-000-0000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비고</th>
+                                                    <td>
+                                                        진입마당,편백나무숲길,조망테크,수국길,
+                                                        단풍나무숲길,허브정원,곰솔림,잔디정원
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>야외 공용 수영장</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            제주의 바람과 하늘을 느끼며 여유롭게 수영할 수 있는 야외
+                                            수영장입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>커뮤니티센터 야외 1층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>추후 공지</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>문의전화</th>
+                                                    <td>000-000-0000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비고</th>
+                                                    <td>7,8월 한정 운영(상세기간 추후 공지)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner2-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="facilitiesInfo">
+                                        <div class="title">
+                                            <div>사우나</div>                                        
+                                        </div>
+                                        <div class="desc">
+                                            노곤한 몸의 피로를 풀 수 있는 시설입니다.
+                                        </div>
+                                        <table class="tableType2">
+                                            <caption>
+                                                <div>편의시설</div>
+                                            </caption>
+                                            <colgroup>
+                                                <col style="width:150px">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>위치</th>
+                                                    <td>커뮤니티센터</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>운영시간</th>
+                                                    <td>07:00~22:00 (7,8월 한정 운영)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>문의전화</th>
+                                                    <td>000-000-0000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="introSwiper__thumb">
+                                        <img src="images/subBanner/facBanner3-3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- 투숙객 여행지도 -->
+            <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">투숙객 추천 여행 지도</h3>
+                        <div class="travelMap">
+                            <img src="images/img/imgTravelbraryMapJeju.jpg" class="travelMap__pc" alt="">
+                            <img src="images/img/imgTravelbraryMap__mobile.jpg" class="travelMap__mobile" alt="">
+                            <div class="txtWrap">
+                                <div class="txt">
+                                    롯데리조트 투숙객 인기 여행지를 
+                                    맞춤 조건별로 더 알아보고 싶다면?
+                                    <div>
+                                        <button class="btn btnBgBlack btnSizeL-2 btnTypeR" style="width:200px;">Travel;Graphy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 오시는 길 -->
+            <!-- <section>
+                <div class="roomType mx-1280">
+                    <div>
+                        <h3 class="h3 head">리조트 위치 안내</h3>
+                        <div>
+                            <ul class="tabType1">
+                                <li class="active">
+                                    <button>자동차로 오시는 길</button>
+                                </li>
+                                <li>
+                                    <button>버스로 오시는 길</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            자동차
+                            <div class="contactMapInfo contactMapInfo__sokcho car active">
+                                <div class="contactMapTxt">
+                                    <div>주소 : 강원도 속초시 대포항길 186</div>
+                                    <div>출발지 : 서울 <span class="txt-gray">(약 2시간 소요)</span></div>
+                                </div>
+                                <div class="contactMapRoot contactMapRoot__sokcho">
+                                    <img src="images/img/imgSokchoRoad.png" alt="">
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                            버스
+                            <div class="contactMapInfo contactMapInfo__sokcho bus">
+                                <div>
+                                    <div class="title">시외버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="title">고속버스</div>
+                                    <div class="contactMapTxt">
+                                        <div>출발지 : 서울</div>
+                                    </div>
+                                    <div class="contactMapRoot contactMapRoot__sokcho">
+                                        <img src="images/img/imgSokchoRoad.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="contactMapDesc">
+                                    <div>※소요 시간은 교통 상황에 따라 다를 수 있습니다.</div>
+                                    <div>※예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+    </main>
+    <footer>
+        <div class="footerWrap">
+            <div class="footerTop mx-1280">
+                <div class="resortLogo">.logo</div>
+                <ul class="footerInfo">
+                    <li>
+                        <a href="./roomDetail.html">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">신문고(제보)</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">제휴제안</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">영상정보처리기간 운영.관리 방침</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">사이트맵</a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html">(주)롯데호텔 기업소개</a>
+                    </li>
+                </ul>
+                <div class="m__footerInfo">
+                    <ul class="">
+                        <li>
+                            <a href="./roomDetail.html">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">신문고(제보)</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">제휴제안</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">개인정보처리방침</a>
+                        </li>
+                    </ul>
+                    <ul class="">
+                        <li>
+                            <a href="./roomDetail.html">영상정보처리기간 운영.관리 방침</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">사이트맵</a>
+                        </li>
+                        <li>
+                            <a href="./roomDetail.html">(주)롯데호텔 기업소개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBot mx-1280">
+                <ul>
+                    <li>
+                        <a href="./roomDetail.html" class="footerBotLogo skyhillLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html" class="footerBotLogo signielLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html" class="footerBotLogo hotelLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html" class="footerBotLogo l7hotelLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomDetail.html" class="footerBotLogo cityhotelLogo"></a>
+                    </li>
+                </ul>
+                <div class="footerBotInfoBox">
+                    <div class="footerBotInfo">
+                        <span>(주)호텔롯데 롯데리조트</span>
+                        <span>주소 : 서울특별시 중구 을지로 30</span> 
+                        <span>대표이사 : 김태홍</span> 
+                        <span>대표번호 : 1588-4355</span>
+                    </div>
+                    <div class="footerBotInfo">
+                        <span>사업자등록번호 : 104-85-27860</span>
+                        <span>통신판매신고번호 : 2004-서울중구-2802호</span>
+                    </div>
+                    <div class="footerBotInfo">
+                        <span>롯데리조트속초 : 033-634-1000</span>
+                        <span> 제주아트빌라스 : 064-731-9000</span>
+                        <span> 롯데리조트부여 : 041-939-1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var swiper = new Swiper(".bannerSwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+         var roomTypeSlideswiper = new Swiper(".introSwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+         var facilitiesSwiper = new Swiper(".facilitiesSwiperBox .mySwiper", {
+            navigation: {
+                nextEl: ".facilitiesSwiperBox .swiper-button-next",
+                prevEl: ".facilitiesSwiperBox .swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+</body>
+</html> 

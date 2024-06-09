@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/date.js"></script>
+    <script defer src="js/index.js"></script>
+    <!-- jquery datepicker -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+
+    <!-- <script type="module" src="../lotteresort/js/header.js"></script> -->
+    <!-- <script type="module" src="../lotteresort/js/date.js"></script> -->
+    <!-- <script type="module" src="../lotteresort/js/index.js"></script> -->
+</head>
+    
+<body>
+    <div class="backPan"></div>
+    <header>
+        <div class="headerWrap">
+            <div class="logoGnbBox">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logoWhite.png" class="logoImg" alt="로고">
+                    </a>
+                </h1>
+                <div class="gnbMenu">
+                    <ul class="gnb">
+                        <li class="depth1">
+                            <a href="./roomType.html">리조트안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">롯데리조트속초</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">롯데리조트부여</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">제주 아트빌라스</a>
+                                </li>
+                                <li> 
+                                    <a href="./roomType.html">롯데아라이리조트</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">테마파크</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">다이닝</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomType.html">스페셜오퍼</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">
+                                        이벤트
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">
+                                        패키지.프로모션
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">
+                                        쿠폰구매
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomType.html">세미나&웨딩</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">세미나&웨딩</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">예약문의</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomType.html">고객센터</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">리조트뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">고객의소리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomType.html">분양안내</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">분양회원뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">분양회원모집</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">분양상품.이용안내</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">분양상담신청</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">프로모션 분양상담 신청</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="depth1">
+                            <a href="./roomType.html">Travel;brary</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="./roomType.html">트래브러리</a>
+                                </li>
+                                <li>
+                                    <a href="./roomType.html">트래브러리 엑티비티</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bgGnb"></div>
+                </div>
+            </div>
+            <a class="login">로그인</a>
+            <div class="hamBtn">
+                <div class="line" id="line_top"></div>
+                <div class="line" id="line_mid"></div>
+                <div class="line" id="line_bot"></div>
+            </div>
+            <div class="mMenu">
+                <div class="userInfo">
+                    <a href="./roomType.html" class="userInfo__signUp">회원가입</a>
+                    <a href="./roomType.html" class="userInfo__login">로그인</a>
+                </div>
+                <ul>
+                    <li class="depth1">
+                        <a href="./roomType.html">리조트안내</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">롯데리조트속초</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">롯데리조트부여</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">제주 아트빌라스</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">롯데아라이리조트</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">테마파크</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">다이닝</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomType.html">스페셜오퍼</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">패키지.프로모션</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">쿠폰구매</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomType.html">세미나&웨딩</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">세미나&웨딩</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">예약문의</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomType.html">고객센터</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">리조트뉴스</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">고객의소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomType.html">분양안내</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">분양회원뉴스</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">분양회원모집</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">분양상품.이용안내</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">분양상담신청</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">프로모션 분양상담 신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="./roomType.html">Travel;brary</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="./roomType.html">트래브러리</a>
+                            </li>
+                            <li>
+                                <a href="./roomType.html">트래브러리 엑티비티</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="mainPage">
+        <section>
+            <div class="main__bannerBox">
+                <div class="swiper mySwiper bannerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide banner banner1">
+                            <img src="images/pc_mainBanner/pc__mainBanner1.png" class="banner__pc" alt="">
+                            <img src="images/m_mainBanner/m__mainBanner1.jpg" class="banner__mo" alt="">
+                            <div class="bannerTxt">
+                                <p class="badgeType3">롯데리조트속초</p>
+                                <div class="title">WAVES OF SOUL</div>
+                                <div class="desc">3월23일, 탁 트인 속초 바다와 함께 만나는 이현우, 빅마마 이영현의 청량 보이스</div>
+                                <button class="btn btnSizeL btnBgTBlack mt-40" style="width:200px;">자세히 보기</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner banner2">
+                            <img src="images/pc_mainBanner/pc__mainBanner2.png" class="banner__pc" alt="">
+                            <img src="images/m_mainBanner/m__mainBanner2.jpg" class="banner__mo" alt="">
+                            <div class="bannerTxt">
+                                <p class="badgeType3">제주 아트빌라스</p>
+                                <div class="title">STAY LONGER, SAVE MORE!</div>
+                                <div class="desc">여유롭게 즐기는 봄내음, 머물수록 커지는 혜택</div>
+                                <button class="btn btnSizeL btnBgTWhite mt-40" style="width:200px;">자세히 보기</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner banner3">
+                            <img src="images/pc_mainBanner/pc__mainBanner3.png" class="banner__pc" alt="">
+                            <img src="images/m_mainBanner/m__mainBanner3.png" class="banner__mo" alt="">
+                            <div class="bannerTxt">
+                                <p class="badgeType3">롯데리조트속초</p>
+                                <div class="title">WELCOME TO SOKCHO</div>
+                                <div class="desc">청량한 바다와 아름다운 절경의 도시, 그곳에서 만나는 롯데리조트</div>
+                                <button class="btn btnSizeL btnBgTWhite mt-40" style="width:200px;">자세히 보기</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner banner4">
+                            <img src="images/pc_mainBanner/pc__mainBanner4.jpg" class="banner__pc" alt="">
+                            <img src="images/m_mainBanner/m__mainBanner4.jpg" class="banner__mo" alt="">
+                            <div class="bannerTxt">
+                                <p class="badgeType3">롯데리조트</p>
+                                <div class="title">LAST CHECK-IN</div>
+                                <div class="desc">PM 18:00 체크인 전용 특별할인을 만나보세요</div>
+                                <button class="btn btnSizeL btnBgTWhite mt-40" style="width:200px;">자세히 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="reserBox mx-1280 hScrollEvent">
+                    <div class="selectType1">
+                        <label for="resort" class="labelType1">방문 리조트 선택</label>
+                        <select style="cursor: pointer;">
+                            <option value="" id="resort">속초</option>
+                        </select>
+                    </div>  
+                    <div class="dateGroupType1">
+                        <div>
+                            <label for="checkIn" class="labelType1">체크인/아웃</label>
+                            <input type="text" id="checkIn" name="from" class="inputType1" autocomplete="off" readonly>
+                        </div>
+                        <div>
+                            <label for="checkOut" class="labelType1">30박</label>
+                            <input type="text" id="checkOut" name="to" class="inputType1" autocomplete="off" readonly >
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="" class="labelType1">객실수</label>
+                        <div class="numSpinnerType1">
+                            <button class="numSpinner numSpinner__decrease">-</button>
+                            <input type="text" class="numSpinner numSpinner__input"  readonly="readonly" value="1">
+                            <button class="numSpinner numSpinner__plus">+</button>
+                        </div>
+                    </div>
+                    <div class="txt-right">
+                        <button class="btn btnSizeL btnBgPrimary" style="width:180px;">객실검색</button>
+                    </div>
+                </div>
+                <div class="m__reserBox hScrollEvent__mobile">
+                    <div class="selectType1">
+                        <label for="resort" class="labelType1">방문 리조트 선택</label>
+                        <select>
+                            <option value="" id="resort">속초</option>
+                        </select>
+                    </div>  
+                    <div class="dateGroupType1">
+                        <div>
+                            <label for="checkIn3" class="labelType1">체크인/아웃</label>
+                            <input type="text" id="checkIn3" name="from" class="inputType1" autocomplete="off" readonly>
+                        </div>
+                        <div>
+                            <label for="checkOut3" class="labelType1">30박</label>
+                            <input type="text" id="checkOut3" name="to" class="inputType1" autocomplete="off" readonly>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="" class="labelType1">객실수</label>
+                        <div class="numSpinnerType1">
+                            <button class="numSpinner numSpinner__decrease">-</button>
+                            <input type="text" class="numSpinner numSpinner__input" value="1">
+                            <button class="numSpinner numSpinner__plus">+</button>
+                        </div>
+                    </div>
+                    <div class="txt-center">
+                        <button class="btn btnSizeL btnBgPrimary" style="width:180px;">객실검색</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mx-1280">
+                <div class="main main__event">
+                    <h3 class="h3 head">EVENT</h3>
+                    <div class="eventSwiper">
+                        <div class="swiper mySwiper eventSwiperBox">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent1.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                    <div class="desc">
+                                                        <p>주중 2인 객실 최대 20% 할인</p>
+                                                        <p>2024.01.26 ~ 2024.03.31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent2.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트부여</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">The Listen in BUYEO</b>
+                                                    <div class="desc">
+                                                        <p>따뜻한 봄과 함께 찾아온 보컬리스트들의 하모니</p>
+                                                        <p>2024.04.26 ~ 2024.05.26</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent3.jpg" alt="">
+                                                <div class="badgeType1">제주 아트빌라스</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">선셋 체크인,여유로운 오전</b>
+                                                    <div class="desc">
+                                                        <p>DA GROUP B Type 레이트 체크아웃 이벤트</p>
+                                                        <p>2024.05.10 ~ 2024.05.30</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent4.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">트레블러리 [수요쿠폰]</b>
+                                                    <div class="desc">
+                                                        <p>여행 혜택을 담은 선착순 쿠폰</p>
+                                                        <p>2024.04.22 ~ 2024.05.22</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent5.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트부여</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">투숙객을 위한 특별 혜택</b>
+                                                    <div class="desc">
+                                                        <p>주변 관광지 제휴 혜택</p>
+                                                        <p>2024.05.03 ~ 2024.05.31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent6.jpg" alt="">
+                                                <div class="badgeType1">제주 아트빌라스</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">아트빌라스 투숙객을 위한 혜택</b>
+                                                    <div class="desc">
+                                                        <p>주변 관광지 제휴 혜택</p>
+                                                        <p>2024.06.01 ~ 2024.06.30</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent7.jpg" alt="">
+                                                <div class="badgeType1">제주 아트빌라스</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">아트빌라스 투숙객을 위한 혜택</b>
+                                                    <div class="desc">
+                                                        <p>롯데호텔 제주 및 롯데스카이힐 CC 제주 혜택</p>
+                                                        <p>2024.06.12 ~ 2024.06.22</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent8.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                    <div class="desc">
+                                                        <p>주중 2인 객실 최대 20% 할인</p>
+                                                        <p>2024.01.26 ~ 2024.03.31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="listType1">
+                                    <ul>
+                                        <li class="content">
+                                            <a href="./roomType.html">
+                                                <img src="images/img/imgEvent9.jpg" alt="">
+                                                <div class="badgeType1">롯데리조트</div>
+                                                <div class="listType1__infoTxt">
+                                                    <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                    <div class="desc">
+                                                        <p>주중 2인 객실 최대 20% 할인</p>
+                                                        <p>2024.01.26 ~ 2024.03.31</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="navgation-wrapper">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main mx-1280">
+                <h3 class="h3 head">SPECIAL OFFERS</h3>
+                <div class="specialBox">
+                    <div class="specialLeft">
+                        <a href="./roomType.html" class="specialContent specailLeft__top">
+                            <img src="images/img/imgSpecial1.jpg" alt="">
+                            <div class="specialInfoTxt">
+                                <div class="subTitle">제주아트빌라스</div>
+                                <div class="title">Small Wedding</div>
+                                <div class="date">2024.01.01 ~ 2024.01.30</div>
+                            </div>
+                        </a>
+                        <div class="specialLeft__bot">
+                            <a href="./roomType.html" class="specialContent specialContent2">
+                                <img src="images/img/imgSpecial2.png" alt="">
+                                <div class="specialInfoTxt">
+                                    <div class="subTitle">제주아트빌라스</div>
+                                    <div class="title">Special 조식</div>
+                                    <div class="date">2024.01.04 ~ 2024.02.04</div>
+                                </div>
+                            </a>
+                            <a href="./roomType.html" class="specialContent specialContent3">
+                                <img src="images/img/imgSpecial3.jpg" alt="">
+                                <div class="specialInfoTxt">
+                                    <div class="subTitle">제주아트빌라스</div>
+                                    <div class="title">Special 조식</div>
+                                    <div class="date">2024.01.04 ~ 2024.02.04</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="specialRight">
+                        <a href="./roomType.html" class="specialContent">
+                            <img src="images/img/imgSpecial4.jpg" alt="">
+                            <div class="specialInfoTxt">
+                                <div class="subTitle">제주아트빌라스</div>
+                                <div class="title">Special 조식</div>
+                                <div class="date">2024.01.04 ~ 2024.02.04</div>
+                            </div>
+                        </a>
+                        <a href="./roomType.html" class="specialContent">
+                            <img src="images/img/imgSpecial5.jpg" alt="">
+                            <div class="specialInfoTxt">
+                                <div class="subTitle">제주아트빌라스</div>
+                                <div class="title">Special 조식</div>
+                                <div class="date">2024.01.04 ~ 2024.02.04</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- promotion slide -->
+        <section>
+            <div class="main main__promotion mx-1280">
+                <h3 class="h3 head">PROMOTION</h3>
+                <div class="promotionSwiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion1.jpg" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion2.jpg" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion3.png" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion4.jpg" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion5.png" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion6.jpg" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion7.png" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion8.png" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <div class="listType1">
+                                <ul>
+                                    <li class="content">
+                                        <a href="./roomType.html">
+                                            <img src="images/img/imgPromotion9.png" alt="">
+                                            <div class="badgeType1">롯데리조트</div>
+                                            <div class="listType1__infoTxt">
+                                                <b class="title">Deluxe Room,스페셜 예약 혜택</b>
+                                                <div class="desc">
+                                                    <p>주중 2인 객실 최대 20% 할인</p>
+                                                    <p>2024.01.26 ~ 2024.03.31</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main main__travelActive">
+                <div class="main__travelContent content1">
+                    <div class="travelActive__head">
+                        <h2>
+                            <svg viewBox="0 0 348 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.98982 36V35.181H11.6098V5.319H9.06882C7.94882 5.319 6.97582 5.55 6.14982 6.012C5.33782 6.474 4.65182 7.125 4.09182 7.965C3.53182 8.791 3.07682 9.771 2.72682 10.905C2.39082 12.025 2.14582 13.25 1.99182 14.58H1.13082V4.5H28.5988V14.58H27.7798C27.6258 13.25 27.3738 12.025 27.0238 10.905C26.6878 9.771 26.2398 8.791 25.6798 7.965C25.1198 7.125 24.4268 6.474 23.6008 6.012C22.7748 5.55 21.8088 5.319 20.7028 5.319H18.1408V35.181H22.7608V36H6.98982ZM37.512 27.054C37.512 25.64 37.631 24.289 37.869 23.001C38.121 21.713 38.499 20.565 39.003 19.557C39.521 18.549 40.179 17.751 40.977 17.163C41.789 16.575 42.755 16.281 43.875 16.281C44.841 16.281 45.66 16.491 46.332 16.911C47.004 17.331 47.508 17.87 47.844 18.528C48.18 19.186 48.348 19.872 48.348 20.586C48.348 21.566 48.026 22.413 47.382 23.127C46.752 23.841 45.919 24.198 44.883 24.198C43.861 24.198 43.021 23.883 42.363 23.253C41.719 22.609 41.397 21.846 41.397 20.964C41.397 19.942 41.719 19.109 42.363 18.465C43.021 17.821 43.854 17.499 44.862 17.499C45.52 17.499 46.108 17.646 46.626 17.94C47.158 18.234 47.571 18.619 47.865 19.095C48.159 19.557 48.306 20.054 48.306 20.586H47.487C47.487 19.984 47.333 19.417 47.025 18.885C46.731 18.353 46.304 17.926 45.744 17.604C45.184 17.282 44.533 17.121 43.791 17.121C42.909 17.121 42.111 17.38 41.397 17.898C40.697 18.402 40.088 19.116 39.57 20.04C39.066 20.95 38.674 22.007 38.394 23.211C38.128 24.415 37.995 25.696 37.995 27.054H37.512ZM37.995 16.68V35.181H41.271V36H29.301V35.181H32.157V17.499H29.301V16.68H37.995ZM66.5599 36.42C65.6499 36.42 64.8379 36.287 64.1239 36.021C63.4239 35.769 62.8639 35.37 62.4439 34.824C62.0379 34.264 61.8349 33.55 61.8349 32.682V23.211C61.8349 22.203 61.7369 21.237 61.5409 20.313C61.3449 19.389 60.9669 18.633 60.4069 18.045C59.8469 17.443 59.0069 17.142 57.8869 17.142C57.2989 17.142 56.6619 17.212 55.9759 17.352C55.2899 17.478 54.6389 17.688 54.0229 17.982C53.4209 18.276 52.9239 18.661 52.5319 19.137C52.1539 19.599 51.9649 20.166 51.9649 20.838H50.9779C50.9779 19.956 51.3069 19.249 51.9649 18.717C52.6369 18.171 53.4069 17.898 54.2749 17.898C55.1849 17.898 55.9829 18.143 56.6689 18.633C57.3689 19.123 57.7189 19.83 57.7189 20.754C57.7189 21.748 57.3689 22.504 56.6689 23.022C55.9689 23.526 55.1709 23.778 54.2749 23.778C53.3229 23.778 52.5249 23.519 51.8809 23.001C51.2509 22.469 50.9359 21.748 50.9359 20.838C50.9359 20.054 51.1669 19.382 51.6289 18.822C52.0909 18.248 52.7069 17.779 53.4769 17.415C54.2469 17.051 55.1009 16.785 56.0389 16.617C56.9769 16.435 57.9289 16.344 58.8949 16.344C61.0229 16.344 62.7309 16.645 64.0189 17.247C65.3069 17.835 66.2379 18.647 66.8119 19.683C67.3859 20.719 67.6729 21.895 67.6729 23.211V33.291C67.6729 33.767 67.7639 34.166 67.9459 34.488C68.1419 34.81 68.4989 34.971 69.0169 34.971C69.3669 34.971 69.7799 34.838 70.2559 34.572C70.7459 34.292 71.1309 33.872 71.4109 33.312L71.9149 33.837C71.5089 34.649 70.8299 35.286 69.8779 35.748C68.9399 36.196 67.8339 36.42 66.5599 36.42ZM55.4509 36.42C53.6309 36.42 52.1749 35.958 51.0829 35.034C50.0049 34.096 49.4659 32.829 49.4659 31.233C49.4659 29.357 50.2779 27.887 51.9019 26.823C53.5259 25.745 55.8289 25.206 58.8109 25.206H63.7879V25.92H60.1759C59.1119 25.92 58.2579 26.165 57.6139 26.655C56.9699 27.131 56.5009 27.726 56.2069 28.44C55.9269 29.154 55.7869 29.861 55.7869 30.561C55.7869 31.233 55.8709 31.842 56.0389 32.388C56.2069 32.92 56.4729 33.354 56.8369 33.69C57.2009 34.012 57.6629 34.173 58.2229 34.173C58.8109 34.173 59.3779 33.97 59.9239 33.564C60.4839 33.144 60.9389 32.507 61.2889 31.653C61.6529 30.785 61.8349 29.693 61.8349 28.377H62.3809C62.3809 30.001 62.0939 31.422 61.5199 32.64C60.9599 33.844 60.1619 34.775 59.1259 35.433C58.0899 36.091 56.8649 36.42 55.4509 36.42ZM94.5562 16.68V17.499H91.6372L83.9932 36.42H81.6412L73.8712 17.499H71.1622V16.68H83.3632V17.499H80.3392L85.2322 30.981L90.6712 17.499H86.8912V16.68H94.5562ZM105.468 36.42C103.508 36.42 101.758 36.035 100.218 35.265C98.6923 34.481 97.4883 33.34 96.6063 31.842C95.7243 30.344 95.2833 28.51 95.2833 26.34C95.2833 24.17 95.7033 22.336 96.5433 20.838C97.3973 19.34 98.5733 18.206 100.071 17.436C101.583 16.652 103.319 16.26 105.279 16.26C107.337 16.26 109.031 16.68 110.361 17.52C111.691 18.36 112.678 19.452 113.322 20.796C113.98 22.14 114.309 23.575 114.309 25.101H98.0973V24.282H108.051C108.051 23.442 108.023 22.602 107.967 21.762C107.911 20.908 107.792 20.131 107.61 19.431C107.442 18.717 107.169 18.15 106.791 17.73C106.427 17.296 105.923 17.079 105.279 17.079C104.579 17.079 103.998 17.31 103.536 17.772C103.074 18.234 102.71 18.878 102.444 19.704C102.192 20.516 102.017 21.454 101.919 22.518C101.821 23.582 101.772 24.716 101.772 25.92C101.772 27.278 101.835 28.538 101.961 29.7C102.101 30.848 102.339 31.849 102.675 32.703C103.025 33.557 103.501 34.222 104.103 34.698C104.719 35.174 105.51 35.412 106.476 35.412C108.254 35.412 109.752 34.929 110.97 33.963C112.202 32.983 113.077 31.744 113.595 30.246H114.477C113.931 32.01 112.923 33.48 111.453 34.656C109.983 35.832 107.988 36.42 105.468 36.42ZM125.343 4.5V35.181H129.018V36H115.767V35.181H119.463V5.319H115.767V4.5H125.343ZM155.867 36.42C154.733 36.42 153.676 36.182 152.696 35.706C151.716 35.216 150.834 34.558 150.05 33.732C149.28 32.906 148.65 31.982 148.16 30.96L155.048 5.319H151.835V4.5H160.718L153.032 33.081C153.046 33.753 153.2 34.32 153.494 34.782C153.788 35.244 154.264 35.475 154.922 35.475C155.636 35.475 156.343 35.153 157.043 34.509C157.757 33.851 158.422 32.99 159.038 31.926C159.654 30.862 160.2 29.693 160.676 28.419C161.166 27.131 161.544 25.85 161.81 24.576C162.076 23.288 162.209 22.112 162.209 21.048C162.209 19.998 162.034 19.207 161.684 18.675C161.334 18.129 160.865 17.856 160.277 17.856C159.633 17.856 159.024 18.143 158.45 18.717C157.89 19.277 157.365 20.033 156.875 20.985C156.399 21.923 155.965 22.952 155.573 24.072C155.181 25.192 154.838 26.298 154.544 27.39H153.809C154.313 25.696 154.824 24.17 155.342 22.812C155.86 21.44 156.427 20.271 157.043 19.305C157.659 18.339 158.366 17.597 159.164 17.079C159.962 16.561 160.893 16.302 161.957 16.302C163.833 16.302 165.275 16.96 166.283 18.276C167.305 19.592 167.816 21.335 167.816 23.505C167.816 25.143 167.501 26.732 166.871 28.272C166.241 29.812 165.373 31.198 164.267 32.43C163.161 33.648 161.887 34.621 160.445 35.349C159.003 36.063 157.477 36.42 155.867 36.42ZM168.72 36L173.424 17.499H170.148V16.68H178.884L174.159 36H168.72ZM175.125 30.015C175.377 28.881 175.692 27.684 176.07 26.424C176.462 25.164 176.917 23.939 177.435 22.749C177.967 21.545 178.555 20.46 179.199 19.494C179.857 18.514 180.571 17.737 181.341 17.163C182.125 16.575 182.972 16.281 183.882 16.281C184.946 16.281 185.814 16.589 186.486 17.205C187.158 17.821 187.494 18.626 187.494 19.62C187.494 20.558 187.2 21.349 186.612 21.993C186.024 22.637 185.268 22.959 184.344 22.959C183.462 22.959 182.72 22.686 182.118 22.14C181.53 21.58 181.236 20.866 181.236 19.998C181.236 19.13 181.53 18.416 182.118 17.856C182.706 17.296 183.462 17.016 184.386 17.016C185.268 17.016 185.996 17.24 186.57 17.688C187.158 18.136 187.452 18.78 187.452 19.62H186.633C186.633 18.836 186.381 18.22 185.877 17.772C185.387 17.31 184.715 17.079 183.861 17.079C183.035 17.079 182.265 17.366 181.551 17.94C180.837 18.5 180.172 19.256 179.556 20.208C178.94 21.146 178.38 22.189 177.876 23.337C177.372 24.471 176.931 25.619 176.553 26.781C176.175 27.943 175.86 29.021 175.608 30.015H175.125ZM193.144 36.42C191.212 36.42 189.812 35.804 188.944 34.572C188.09 33.326 187.663 31.667 187.663 29.595C187.663 27.985 187.964 26.396 188.566 24.828C189.168 23.246 189.973 21.811 190.981 20.523C191.989 19.235 193.109 18.206 194.341 17.436C195.573 16.652 196.826 16.26 198.1 16.26C198.968 16.26 199.689 16.484 200.263 16.932C200.837 17.366 201.264 17.982 201.544 18.78C201.824 19.564 201.964 20.481 201.964 21.531C201.964 22.231 201.873 23.085 201.691 24.093C201.523 25.087 201.264 26.144 200.914 27.264C200.578 28.384 200.158 29.483 199.654 30.561C199.164 31.639 198.59 32.619 197.932 33.501C197.288 34.383 196.56 35.09 195.748 35.622C194.95 36.154 194.082 36.42 193.144 36.42ZM194.971 34.572C195.531 34.572 196.105 34.285 196.693 33.711C197.295 33.137 197.869 32.374 198.415 31.422C198.961 30.456 199.451 29.392 199.885 28.23C200.319 27.068 200.662 25.899 200.914 24.723C201.166 23.533 201.292 22.427 201.292 21.405C201.292 20.719 201.222 20.131 201.082 19.641C200.956 19.137 200.76 18.745 200.494 18.465C200.228 18.185 199.878 18.045 199.444 18.045C198.898 18.045 198.331 18.36 197.743 18.99C197.155 19.606 196.588 20.425 196.042 21.447C195.496 22.469 195.006 23.589 194.572 24.807C194.138 26.011 193.788 27.222 193.522 28.44C193.27 29.644 193.144 30.743 193.144 31.737C193.144 32.619 193.298 33.312 193.606 33.816C193.928 34.32 194.383 34.572 194.971 34.572ZM202.972 36.42C201.684 36.42 200.739 36.126 200.137 35.538C199.535 34.936 199.234 34.124 199.234 33.102C199.234 32.836 199.241 32.605 199.255 32.409C199.269 32.213 199.29 32.045 199.318 31.905L199.969 28.65L201.04 25.311L201.628 21.699L202.846 16.68H208.516L203.98 33.732C203.924 33.956 203.896 34.173 203.896 34.383C203.896 34.565 203.945 34.719 204.043 34.845C204.141 34.971 204.302 35.034 204.526 35.034C204.946 35.034 205.401 34.859 205.891 34.509C206.381 34.159 206.906 33.564 207.466 32.724C208.04 31.87 208.649 30.687 209.293 29.175L210.112 29.448C209.426 31.058 208.733 32.381 208.033 33.417C207.333 34.439 206.57 35.195 205.744 35.685C204.932 36.175 204.008 36.42 202.972 36.42ZM210.188 36L214.892 17.499H211.616V16.68H220.352L215.627 36H210.188ZM216.593 30.015C216.845 28.881 217.16 27.684 217.538 26.424C217.93 25.164 218.385 23.939 218.903 22.749C219.435 21.545 220.023 20.46 220.667 19.494C221.325 18.514 222.039 17.737 222.809 17.163C223.593 16.575 224.44 16.281 225.35 16.281C226.414 16.281 227.282 16.589 227.954 17.205C228.626 17.821 228.962 18.626 228.962 19.62C228.962 20.558 228.668 21.349 228.08 21.993C227.492 22.637 226.736 22.959 225.812 22.959C224.93 22.959 224.188 22.686 223.586 22.14C222.998 21.58 222.704 20.866 222.704 19.998C222.704 19.13 222.998 18.416 223.586 17.856C224.174 17.296 224.93 17.016 225.854 17.016C226.736 17.016 227.464 17.24 228.038 17.688C228.626 18.136 228.92 18.78 228.92 19.62H228.101C228.101 18.836 227.849 18.22 227.345 17.772C226.855 17.31 226.183 17.079 225.329 17.079C224.503 17.079 223.733 17.366 223.019 17.94C222.305 18.5 221.64 19.256 221.024 20.208C220.408 21.146 219.848 22.189 219.344 23.337C218.84 24.471 218.399 25.619 218.021 26.781C217.643 27.943 217.328 29.021 217.076 30.015H216.593ZM231.988 46.92C230.91 46.92 229.972 46.703 229.174 46.269C228.376 45.835 227.76 45.24 227.326 44.484C226.892 43.728 226.675 42.86 226.675 41.88C226.675 41.236 226.822 40.634 227.116 40.074C227.41 39.528 227.809 39.087 228.313 38.751C228.831 38.429 229.426 38.268 230.098 38.268C230.588 38.268 231.078 38.38 231.568 38.604C232.058 38.828 232.464 39.164 232.786 39.612C233.122 40.074 233.29 40.655 233.29 41.355C233.29 42.307 232.982 43.07 232.366 43.644C231.764 44.218 231.071 44.505 230.287 44.505C229.741 44.505 229.195 44.393 228.649 44.169C228.103 43.959 227.648 43.651 227.284 43.245C226.906 42.853 226.717 42.398 226.717 41.88H227.515C227.515 42.72 227.697 43.455 228.061 44.085C228.411 44.729 228.915 45.226 229.573 45.576C230.231 45.94 231.022 46.122 231.946 46.122C233.108 46.122 234.333 45.744 235.621 44.988C236.923 44.246 238.239 43.238 239.569 41.964C240.899 40.704 242.194 39.283 243.454 37.701C244.728 36.133 245.911 34.516 247.003 32.85C248.109 31.17 249.075 29.546 249.901 27.978C250.741 26.396 251.399 24.982 251.875 23.736C252.351 22.49 252.589 21.517 252.589 20.817C252.589 20.201 252.47 19.613 252.232 19.053C251.994 18.479 251.637 18.017 251.161 17.667C250.685 17.303 250.104 17.121 249.418 17.121V16.323C250.104 16.323 250.72 16.477 251.266 16.785C251.812 17.093 252.232 17.492 252.526 17.982C252.834 18.472 252.988 18.997 252.988 19.557C252.988 20.159 252.827 20.705 252.505 21.195C252.183 21.671 251.756 22.049 251.224 22.329C250.692 22.595 250.118 22.728 249.502 22.728C248.452 22.728 247.598 22.413 246.94 21.783C246.296 21.153 245.974 20.39 245.974 19.494C245.974 18.598 246.303 17.842 246.961 17.226C247.619 16.596 248.438 16.281 249.418 16.281C250.398 16.281 251.182 16.512 251.77 16.974C252.358 17.422 252.785 17.989 253.051 18.675C253.317 19.361 253.45 20.047 253.45 20.733C253.45 21.517 253.205 22.574 252.715 23.904C252.239 25.22 251.574 26.69 250.72 28.314C249.866 29.938 248.872 31.611 247.738 33.333C246.618 35.055 245.4 36.721 244.084 38.331C242.782 39.955 241.438 41.411 240.052 42.699C238.666 44.001 237.287 45.03 235.915 45.786C234.543 46.542 233.234 46.92 231.988 46.92ZM242.005 40.011C241.487 39.129 240.969 38.072 240.451 36.84C239.933 35.622 239.422 34.313 238.918 32.913C238.428 31.513 237.952 30.113 237.49 28.713C237.042 27.299 236.622 25.955 236.23 24.681C235.838 23.407 235.488 22.287 235.18 21.321C234.872 20.341 234.62 19.599 234.424 19.095C234.34 18.871 234.207 18.64 234.025 18.402C233.843 18.15 233.542 18.024 233.122 18.024C232.576 18.024 231.988 18.304 231.358 18.864C230.742 19.424 230.182 20.404 229.678 21.804L228.88 21.447C229.342 20.187 229.895 19.179 230.539 18.423C231.183 17.667 231.918 17.121 232.744 16.785C233.584 16.449 234.508 16.281 235.516 16.281C237.126 16.281 238.302 16.652 239.044 17.394C239.786 18.122 240.325 19.067 240.661 20.229C240.941 21.181 241.256 22.301 241.606 23.589C241.956 24.877 242.348 26.221 242.782 27.621C243.216 29.007 243.699 30.358 244.231 31.674C244.763 32.99 245.358 34.159 246.016 35.181C245.736 35.559 245.442 35.944 245.134 36.336C244.826 36.742 244.497 37.141 244.147 37.533C243.811 37.939 243.461 38.345 243.097 38.751C242.733 39.171 242.369 39.591 242.005 40.011Z" fill="white"></path>
+                                <path d="M135.278 36.1892L135.035 35.7318C137.324 34.1516 138.802 32.9595 138.802 31.2684C138.817 30.7383 138.628 30.2226 138.275 29.8268C137.828 30.0881 137.314 30.2111 136.797 30.1803C136.471 30.1842 136.147 30.122 135.846 29.9972C135.545 29.8724 135.272 29.6877 135.044 29.4544C134.816 29.221 134.639 28.9439 134.521 28.6398C134.404 28.3356 134.35 28.0109 134.362 27.6852C134.357 27.3406 134.424 26.9988 134.56 26.6817C134.695 26.3646 134.895 26.0794 135.147 25.8443C135.399 25.6092 135.698 25.4296 136.024 25.3169C136.35 25.2043 136.696 25.1611 137.04 25.1902C138.837 25.1902 140.279 26.701 140.279 29.3486C140.279 31.9961 138.878 34.0129 135.278 36.1892ZM137.359 18.5436C136.774 18.5436 136.203 18.3705 135.717 18.0461C135.231 17.7216 134.852 17.2605 134.629 16.721C134.405 16.1815 134.347 15.5879 134.461 15.0151C134.575 14.4424 134.856 13.9163 135.269 13.5034C135.683 13.0905 136.209 12.8093 136.782 12.6954C137.356 12.5815 137.95 12.6399 138.49 12.8634C139.03 13.0869 139.491 13.4653 139.816 13.9508C140.141 14.4364 140.314 15.0072 140.314 15.5911C140.315 15.9854 140.237 16.3759 140.086 16.7398C139.934 17.1037 139.711 17.4337 139.43 17.7105C139.149 17.9873 138.816 18.2054 138.449 18.3521C138.083 18.4987 137.691 18.5709 137.297 18.5644L137.359 18.5436Z" fill="white"></path>
+                                <g clip-path="url(#clip0)">
+                                    <path d="M273.48 17.0957C273.052 18.8008 272.576 20.4445 272.1 22.0677L271.479 24.1138H275.619L275.025 22.0677C274.508 20.4445 274.06 18.7803 273.604 17.0957H273.48Z" fill="white"></path>
+                                    <path d="M260 9V37.9932H348V9H260ZM277.447 30.1975L276.177 25.9281H270.914L269.617 30.1975H267.195L272.218 15.2542H274.977L279.992 30.2249L277.447 30.1975ZM286.36 30.4635C283.304 30.4635 280.958 28.3288 280.958 24.6117C280.958 20.8946 283.566 18.7394 286.546 18.7394C287.775 18.7348 288.959 19.1933 289.858 20.0216L288.685 21.5426C288.153 21.0041 287.431 20.6911 286.67 20.6696C284.759 20.6696 283.407 22.2519 283.407 24.6117C283.407 26.9715 284.718 28.547 286.588 28.547C287.505 28.5088 288.38 28.1513 289.057 27.5376L290.044 29.079C289.025 29.9654 287.717 30.4572 286.36 30.4635ZM295.956 30.4635C293.41 30.4635 292.507 28.8949 292.507 26.5419V20.8947H290.858V19.1418L292.631 19.0259L292.914 15.9363H294.887V19.0259H297.826V20.8947H294.887V26.5623C294.887 27.9264 295.363 28.6084 296.536 28.6084C296.951 28.5954 297.361 28.5051 297.743 28.3424L298.177 30.068C297.463 30.314 296.713 30.4475 295.956 30.4635ZM302.655 30.1975H300.288V19.0259H302.655V30.1975ZM301.461 16.932C301.196 16.9121 300.941 16.8166 300.729 16.6569C300.517 16.4972 300.357 16.2802 300.267 16.0322C300.177 15.7842 300.161 15.5157 300.223 15.2592C300.284 15.0027 300.418 14.7692 300.611 14.5869C300.803 14.4047 301.045 14.2814 301.307 14.232C301.569 14.1826 301.839 14.2092 302.086 14.3087C302.333 14.4081 302.545 14.5761 302.698 14.7923C302.85 15.0085 302.936 15.2637 302.944 15.5271C302.951 15.7185 302.916 15.9092 302.843 16.0866C302.77 16.2641 302.66 16.4243 302.52 16.5568C302.38 16.6893 302.214 16.7913 302.031 16.8559C301.849 16.9206 301.655 16.9465 301.461 16.932ZM311.409 30.1975H308.65L304.642 19.0259H307.063L308.995 25.0346C309.326 26.1327 309.65 27.2716 309.981 28.3697H310.064C310.395 27.2716 310.754 26.1327 311.05 25.0346L312.982 19.0259H315.279L311.409 30.1975ZM319.75 30.1975H317.383V19.0259H319.75V30.1975ZM318.556 16.932C318.29 16.9134 318.035 16.8189 317.822 16.66C317.609 16.501 317.447 16.2844 317.356 16.0364C317.266 15.7884 317.249 15.5196 317.31 15.2627C317.37 15.0057 317.504 14.7716 317.697 14.5886C317.889 14.4057 318.131 14.2818 318.393 14.2319C318.655 14.182 318.926 14.2084 319.173 14.3077C319.42 14.407 319.633 14.575 319.786 14.7914C319.938 15.0079 320.024 15.2634 320.033 15.5271C320.039 15.7179 320.005 15.908 319.932 16.0849C319.859 16.2618 319.75 16.4217 319.61 16.5541C319.471 16.6866 319.306 16.7886 319.124 16.8537C318.942 16.9188 318.749 16.9455 318.556 16.932ZM327.083 30.4635C324.531 30.4635 323.634 28.8949 323.634 26.5419V20.8947H321.992V19.1418L323.758 19.0259L324.027 15.9363H326.028V19.0259H328.966V20.8947H326.028V26.5623C326.028 27.9264 326.497 28.6084 327.669 28.6084C328.087 28.5952 328.499 28.505 328.884 28.3424L329.311 30.068C328.595 30.316 327.842 30.4496 327.083 30.4635ZM336.389 30.866C335.506 33.2667 334.32 34.8695 331.926 34.8695C331.456 34.8758 330.989 34.7996 330.546 34.6444L330.995 32.8166C331.262 32.9084 331.54 32.9635 331.823 32.9802C333.05 32.9802 333.768 32.0868 334.182 30.8864L334.41 30.1157L329.932 19.0259H332.354L334.423 24.7754C334.748 25.7644 335.113 26.8829 335.451 27.9196H335.555C335.838 26.9034 336.148 25.7848 336.438 24.7754L338.245 19.0259H340.515L336.389 30.866Z" fill="white"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="88" height="29" fill="white" transform="translate(260 9)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </h2>
+                        <h3 class="h3-3">
+                            여행을 보다 풍성하게 만들어줄<br>
+                            트래브러리 액티비티를 만나보세요
+                        </h3>
+                        <div class="align center">
+                            <button class="btn btnBgTWhite btnTypeR btnSizeL-2" style="width:200px">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="travelActive__move">
+                        <div class="boxWrap boxWrap1">
+                            <div class="boxInner">
+                                <img src="images/img/imgActivity1.jpg" alt="">
+                                <div class="hasTage">#요가</div>
+                            </div>
+                        </div>
+                        <div class="boxWrap boxWrap2">
+                            <div class="boxInner">
+                                <img src="images/img/imgActivity2.jpg" alt="">
+                                <div class="hasTage">#명상</div>
+                            </div>
+                        </div>
+                        <div class="boxWrap boxWrap3">
+                            <div class="boxInner">
+                                <img src="images/img/imgActivity3.jpg" alt="">
+                                <div class="hasTage txt-right">#과자집</div>
+                            </div>
+                        </div>
+                        <div class="boxWrap boxWrap4">
+                            <div class="boxInner">
+                                <img src="images/img/imgActivity4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__travelContent content2">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main main__travel">
+                <div class="mx-1280 travelContent">
+                    <div class="travelItem travelItem__desc">
+                        <h3 class="h3">
+                            <svg viewBox="0 0 797 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.122 99V96.66H37.322V11.34H30.062C26.862 11.34 24.082 12 21.722 13.32C19.402 14.64 17.442 16.5 15.842 18.9C14.242 21.26 12.942 24.06 11.942 27.3C10.982 30.5 10.282 34 9.84204 37.8H7.38204V8.99999H85.862V37.8H83.522C83.082 34 82.362 30.5 81.362 27.3C80.402 24.06 79.122 21.26 77.522 18.9C75.922 16.5 73.942 14.64 71.582 13.32C69.222 12 66.462 11.34 63.302 11.34H55.982V96.66H69.182V99H24.122ZM111.328 73.44C111.328 69.4 111.668 65.54 112.348 61.86C113.068 58.18 114.148 54.9 115.588 52.02C117.068 49.14 118.948 46.86 121.228 45.18C123.548 43.5 126.308 42.66 129.508 42.66C132.268 42.66 134.608 43.26 136.528 44.46C138.448 45.66 139.888 47.2 140.848 49.08C141.808 50.96 142.288 52.92 142.288 54.96C142.288 57.76 141.368 60.18 139.528 62.22C137.728 64.26 135.348 65.28 132.388 65.28C129.468 65.28 127.068 64.38 125.188 62.58C123.348 60.74 122.428 58.56 122.428 56.04C122.428 53.12 123.348 50.74 125.188 48.9C127.068 47.06 129.448 46.14 132.328 46.14C134.208 46.14 135.888 46.56 137.368 47.4C138.888 48.24 140.068 49.34 140.908 50.7C141.748 52.02 142.168 53.44 142.168 54.96H139.828C139.828 53.24 139.388 51.62 138.508 50.1C137.668 48.58 136.448 47.36 134.848 46.44C133.248 45.52 131.388 45.06 129.268 45.06C126.748 45.06 124.468 45.8 122.428 47.28C120.428 48.72 118.688 50.76 117.208 53.4C115.768 56 114.648 59.02 113.848 62.46C113.088 65.9 112.708 69.56 112.708 73.44H111.328ZM112.708 43.8V96.66H122.068V99H87.8683V96.66H96.0283V46.14H87.8683V43.8H112.708ZM194.322 100.2C191.722 100.2 189.402 99.82 187.362 99.06C185.362 98.34 183.762 97.2 182.562 95.64C181.402 94.04 180.822 92 180.822 89.52V62.46C180.822 59.58 180.542 56.82 179.982 54.18C179.422 51.54 178.342 49.38 176.742 47.7C175.142 45.98 172.742 45.12 169.542 45.12C167.862 45.12 166.042 45.32 164.082 45.72C162.122 46.08 160.262 46.68 158.502 47.52C156.782 48.36 155.362 49.46 154.242 50.82C153.162 52.14 152.622 53.76 152.622 55.68H149.802C149.802 53.16 150.742 51.14 152.622 49.62C154.542 48.06 156.742 47.28 159.222 47.28C161.822 47.28 164.102 47.98 166.062 49.38C168.062 50.78 169.062 52.8 169.062 55.44C169.062 58.28 168.062 60.44 166.062 61.92C164.062 63.36 161.782 64.08 159.222 64.08C156.502 64.08 154.222 63.34 152.382 61.86C150.582 60.34 149.682 58.28 149.682 55.68C149.682 53.44 150.342 51.52 151.662 49.92C152.982 48.28 154.742 46.94 156.942 45.9C159.142 44.86 161.582 44.1 164.262 43.62C166.942 43.1 169.662 42.84 172.422 42.84C178.502 42.84 183.382 43.7 187.062 45.42C190.742 47.1 193.402 49.42 195.042 52.38C196.682 55.34 197.502 58.7 197.502 62.46V91.26C197.502 92.62 197.762 93.76 198.282 94.68C198.842 95.6 199.862 96.06 201.342 96.06C202.342 96.06 203.522 95.68 204.882 94.92C206.282 94.12 207.382 92.92 208.182 91.32L209.622 92.82C208.462 95.14 206.522 96.96 203.802 98.28C201.122 99.56 197.962 100.2 194.322 100.2ZM162.582 100.2C157.382 100.2 153.222 98.88 150.102 96.24C147.022 93.56 145.482 89.94 145.482 85.38C145.482 80.02 147.802 75.82 152.442 72.78C157.082 69.7 163.662 68.16 172.182 68.16H186.402V70.2H176.082C173.042 70.2 170.602 70.9 168.762 72.3C166.922 73.66 165.582 75.36 164.742 77.4C163.942 79.44 163.542 81.46 163.542 83.46C163.542 85.38 163.782 87.12 164.262 88.68C164.742 90.2 165.502 91.44 166.542 92.4C167.582 93.32 168.902 93.78 170.502 93.78C172.182 93.78 173.802 93.2 175.362 92.04C176.962 90.84 178.262 89.02 179.262 86.58C180.302 84.1 180.822 80.98 180.822 77.22H182.382C182.382 81.86 181.562 85.92 179.922 89.4C178.322 92.84 176.042 95.5 173.082 97.38C170.122 99.26 166.622 100.2 162.582 100.2ZM274.312 43.8V46.14H265.972L244.132 100.2H237.412L215.212 46.14H207.472V43.8H242.332V46.14H233.692L247.672 84.66L263.212 46.14H252.412V43.8H274.312ZM305.489 100.2C299.889 100.2 294.889 99.1 290.489 96.9C286.129 94.66 282.689 91.4 280.169 87.12C277.649 82.84 276.389 77.6 276.389 71.4C276.389 65.2 277.589 59.96 279.989 55.68C282.429 51.4 285.789 48.16 290.069 45.96C294.389 43.72 299.349 42.6 304.949 42.6C310.829 42.6 315.669 43.8 319.469 46.2C323.269 48.6 326.089 51.72 327.929 55.56C329.809 59.4 330.749 63.5 330.749 67.86H284.429V65.52H312.869C312.869 63.12 312.789 60.72 312.629 58.32C312.469 55.88 312.129 53.66 311.609 51.66C311.129 49.62 310.349 48 309.269 46.8C308.229 45.56 306.789 44.94 304.949 44.94C302.949 44.94 301.289 45.6 299.969 46.92C298.649 48.24 297.609 50.08 296.849 52.44C296.129 54.76 295.629 57.44 295.349 60.48C295.069 63.52 294.929 66.76 294.929 70.2C294.929 74.08 295.109 77.68 295.469 81C295.869 84.28 296.549 87.14 297.509 89.58C298.509 92.02 299.869 93.92 301.589 95.28C303.349 96.64 305.609 97.32 308.369 97.32C313.449 97.32 317.729 95.94 321.209 93.18C324.729 90.38 327.229 86.84 328.709 82.56H331.229C329.669 87.6 326.789 91.8 322.589 95.16C318.389 98.52 312.689 100.2 305.489 100.2ZM362.274 8.99999V96.66H372.774V99H334.914V96.66H345.474V11.34H334.914V8.99999H362.274ZM515.965 43.8V46.14H506.425L488.365 100.2H481.705L466.945 58.44L450.145 100.2H443.305L426.085 46.14H418.405V43.8H453.145V46.14H443.425L454.165 83.52L470.605 42.6H480.445L492.145 81L503.845 46.14H492.265V43.8H515.965ZM529.902 28.38C527.022 28.38 524.582 27.4 522.582 25.44C520.622 23.48 519.642 21.06 519.642 18.18C519.642 15.3 520.622 12.88 522.582 10.92C524.582 8.91999 527.022 7.91999 529.902 7.91999C532.782 7.91999 535.202 8.91999 537.162 10.92C539.122 12.88 540.102 15.3 540.102 18.18C540.102 21.06 539.122 23.48 537.162 25.44C535.202 27.4 532.782 28.38 529.902 28.38ZM538.242 43.8V96.66H546.402V99H513.342V96.66H521.442V46.14H513.342V43.8H538.242ZM566.163 99.84C562.283 99.84 559.303 99.2 557.223 97.92C555.183 96.6 553.783 94.84 553.023 92.64C552.263 90.4 551.883 87.86 551.883 85.02V31.8C554.603 31.8 557.543 31.5 560.703 30.9C563.903 30.3 566.563 29.4 568.683 28.2V86.94C568.683 89.94 569.043 92.06 569.763 93.3C570.483 94.5 571.663 95.1 573.303 95.1C575.063 95.1 576.823 94.36 578.583 92.88C580.383 91.4 581.863 89.38 583.023 86.82L585.123 87.84C583.603 91.4 581.303 94.3 578.223 96.54C575.143 98.74 571.123 99.84 566.163 99.84ZM543.483 46.14V43.8H581.523V46.14H543.483ZM581.72 99V96.66H589.88V11.34H581.72V8.99999H606.68V96.66H612.98V99H581.72ZM620.18 99V96.66H626.48V62.16C626.48 58.8 626.34 56.08 626.06 54C625.78 51.92 625.22 50.4 624.38 49.44C623.54 48.48 622.3 48 620.66 48C618.42 48 616.42 48.74 614.66 50.22C612.94 51.66 611.48 53.58 610.28 55.98C609.12 58.38 608.22 61 607.58 63.84C606.98 66.64 606.68 69.42 606.68 72.18L604.88 72.3C604.88 69.46 605.2 66.34 605.84 62.94C606.52 59.5 607.64 56.24 609.2 53.16C610.8 50.08 612.98 47.56 615.74 45.6C618.5 43.6 621.98 42.6 626.18 42.6C630.7 42.6 634.18 43.38 636.62 44.94C639.06 46.5 640.76 48.64 641.72 51.36C642.68 54.08 643.16 57.18 643.16 60.66V96.66H651.32V99H620.18ZM697.871 100.2C693.351 100.2 689.851 99.42 687.371 97.86C684.931 96.26 683.231 94.1 682.271 91.38C681.311 88.66 680.831 85.56 680.831 82.08V46.14H672.671V43.8H697.631V80.64C697.631 84 697.771 86.72 698.051 88.8C698.371 90.88 698.931 92.4 699.731 93.36C700.571 94.32 701.831 94.8 703.511 94.8C705.791 94.8 707.791 94.08 709.511 92.64C711.271 91.16 712.731 89.22 713.891 86.82C715.051 84.42 715.931 81.82 716.531 79.02C717.131 76.18 717.431 73.38 717.431 70.62L719.171 70.5C719.171 73.34 718.851 76.48 718.211 79.92C717.611 83.32 716.531 86.56 714.971 89.64C713.411 92.72 711.251 95.26 708.491 97.26C705.731 99.22 702.191 100.2 697.871 100.2ZM717.431 99V46.14H709.631V43.8H734.291V96.66H742.391V99H717.431ZM742.92 100.2V81.24H745.32C746.52 84.64 748.12 87.58 750.12 90.06C752.12 92.5 754.44 94.4 757.08 95.76C759.72 97.08 762.64 97.74 765.84 97.74C768.16 97.74 770.26 97.42 772.14 96.78C774.02 96.14 775.5 95.22 776.58 94.02C777.66 92.82 778.2 91.32 778.2 89.52C778.2 87.44 777.38 85.78 775.74 84.54C774.14 83.3 772.04 82.24 769.44 81.36C766.88 80.48 764.16 79.56 761.28 78.6C758.4 77.6 755.66 76.38 753.06 74.94C750.5 73.46 748.4 71.52 746.76 69.12C745.16 66.72 744.36 63.6 744.36 59.76C744.36 56.6 745.1 53.74 746.58 51.18C748.1 48.58 750.22 46.52 752.94 45C755.7 43.48 758.98 42.72 762.78 42.72C765.5 42.72 767.98 43.16 770.22 44.04C772.46 44.92 774.44 46.08 776.16 47.52L782.28 42.6H784.38V59.4H781.98C780.98 56.92 779.62 54.6 777.9 52.44C776.18 50.28 774.08 48.54 771.6 47.22C769.12 45.9 766.2 45.24 762.84 45.24C761.04 45.24 759.4 45.54 757.92 46.14C756.48 46.7 755.3 47.52 754.38 48.6C753.5 49.68 753.06 50.92 753.06 52.32C753.06 54.28 753.9 55.86 755.58 57.06C757.3 58.26 759.48 59.32 762.12 60.24C764.76 61.16 767.56 62.12 770.52 63.12C773.52 64.12 776.34 65.36 778.98 66.84C781.62 68.32 783.78 70.24 785.46 72.6C787.14 74.92 787.98 77.9 787.98 81.54C787.98 85.74 786.94 89.22 784.86 91.98C782.82 94.74 780.18 96.8 776.94 98.16C773.7 99.52 770.26 100.2 766.62 100.2C763.58 100.2 760.76 99.7 758.16 98.7C755.6 97.7 753.3 96.3 751.26 94.5L744.96 100.2H742.92Z" fill="#111111"></path>
+                                <path d="M389.488 98.8198L388.824 97.6C394.906 93.3861 398.832 90.2073 398.832 85.6977C398.871 84.2841 398.37 82.9089 397.431 81.8535C396.244 82.5503 394.878 82.8783 393.505 82.796C392.64 82.8042 391.783 82.6362 390.985 82.3023C390.186 81.9685 389.464 81.4756 388.861 80.8536C388.258 80.2317 387.787 79.4934 387.476 78.6837C387.166 77.8739 387.023 77.0095 387.055 76.1426C387.039 75.2245 387.215 74.3133 387.572 73.4678C387.929 72.6223 388.459 71.8614 389.128 71.2343C389.797 70.6071 390.59 70.1278 391.455 69.8272C392.32 69.5266 393.238 69.4114 394.151 69.4891C398.924 69.4891 402.757 73.5182 402.757 80.5782C402.757 87.472 399.108 93.0165 389.488 98.8198ZM394.851 51.7465C393.298 51.7465 391.78 51.2848 390.489 50.4196C389.198 49.5545 388.192 48.3249 387.598 46.8862C387.003 45.4476 386.848 43.8645 387.151 42.3373C387.454 40.81 388.201 39.4071 389.299 38.306C390.397 37.2049 391.796 36.4551 393.319 36.1513C394.842 35.8475 396.421 36.0034 397.855 36.5993C399.29 37.1952 400.516 38.2044 401.379 39.4991C402.241 40.7939 402.702 42.3161 402.702 43.8733C402.692 45.9584 401.862 47.9554 400.392 49.4298C398.921 50.9042 396.93 51.7368 394.851 51.7465Z" fill="black"></path>
+                            </svg>
+                        </h3>
+                        <h4 class="h4">
+                            현재 직원들이 전하는 알찬 여행 팁을 소개합니다.
+                        </h4>
+                        <div class="swiper mySwiper listType2 mt-40">
+                            <ul class="swiper-wrapper">
+                                <li class="content swiper-slide">
+                                        <div class="num">01</div>
+                                        <div class="txt">제주도로 밀려 온 핑크색 파도, 제주 핑크뮬리 명소5</div>
+                                </li>
+                                <li class="content swiper-slide">
+                                        <div class="num">02</div>
+                                        <div class="txt">MZ세대 취향저격 강원도 '이색공간'5</div>
+                                </li>
+                                <li class="content swiper-slide">
+                                        <div class="num">03</div>
+                                        <div class="txt">'빵심'으로 사는 사람을 위한 제주 빵지순례 카페5</div>
+                                </li>
+                                <li class="content swiper-slide">
+                                        <div class="num">04</div>
+                                        <div class="txt">퇴근 후 직원들끼리 가는 속초 로컬 맛집5</div>                                </a>
+                                </li>
+                                <li class="content swiper-slide">
+                                        <div class="num">05</div>
+                                        <div class="txt">무르익은 부여, 가을 색을 따라 걷다</div>
+                                </li>
+                                <li class="content swiper-slide">
+                                    <div class="num">06</div>
+                                    <div class="txt">분위기와 맛을 다잡은 특별한 속초 다이닝6</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="travelItem travelItem__img">
+                        <div class="travelItem__title">
+                            <i>LET`s GO TRAVEL!</i>
+                        </div>
+                        <div class="swiper mySwiper travelSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel1-1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel2-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel3-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel4-1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel5-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/img/imgTravel6-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main main__notion mx-1280">
+                <h3 class="h3 head">공지사항</h3>
+                <ul class="listType5">
+                    <li>
+                        <a href="./roomType.html">
+                            <div class="listType5__thumb">
+                                <img src="images/img/imgNotion1.png" alt="">
+                                <div class="badgeType2">롯데리조트 부여</div>
+                            </div>
+                            <div class="listType5__content">
+                                <div class="title">조식 뷔페 요금인상</div>
+                                <div class="desc">롯데리조트부여 본디마슬 조식뷔페 요금인상 안내</div>
+                                <!-- <div class="date">2023.03.03 ~ 2023.03.31</div> -->
+                                <div class="tag">#조식뷔폐 #요금인상</div>
+                                <div>자세히 보기</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">
+                            <div class="listType5__thumb">
+                                <img src="images/img/imgNotion1.png" alt="">
+                                <div class="badgeType2">제주 아트빌라스</div>
+                            </div>
+                            <div class="listType5__content">
+                                <div class="title">제주 아트빌라스 예약실 분리 운영 안내</div>
+                                <div class="desc">리조트부문 예약실(속초/부여리조트)과 제주부문 예약실(제주중문호텔/제주시티호텔/아트빌라스)로 분리운영</div>
+                                <!-- <div class="date">2023.03.03 ~ 2023.03.31</div> -->
+                                <div class="tag">#예약실 #분리 운영</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">
+                            <div class="listType5__thumb">
+                                <img src="images/img/imgNotion1.png" alt="">
+                                <div class="badgeType2">공지사항</div>
+                            </div>
+                            <div class="listType5__content">
+                                <div class="title">일회용 어메니티 무료제공 중단 안내</div>
+                                <div class="desc">일회용품 사용 줄이기에 동참하고자 칫솔, 치약, 면도기, 쉐이빙 젤은 제공되지 않습니다</div>
+                                <!-- <div class="date">2023.03.03 ~ 2023.03.31</div> -->
+                                <div class="tag">#일회용품 #사용 줄이기 #동참</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">
+                            <div class="listType5__thumb">
+                                <img src="images/img/imgNotion1.png" alt="">
+                                <div class="badgeType2">제주 아트빌라스</div>
+                            </div>
+                            <div class="listType5__content">
+                                <div class="title">제주 아트빌라스 공항 셔틀버스 운영 안내</div>
+                                <div class="desc">보다 편안하고 안락한 시설에서 고객님을 모시고자 아래와 같이 셔틀버스를 운행합니다.</div>
+                                <!-- <div class="date">2023.03.03 ~ 2023.03.31</div> -->
+                                <div class="tag">#셔틀버스 #운영 #편안하게 #여행하세요</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerWrap">
+            <div class="footerTop mx-1280">
+                <div class="resortLogo">.logo</div>
+                <ul class="footerInfo">
+                    <li>
+                        <a href="./roomType.html">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">신문고(제보)</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">제휴제안</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">영상정보처리기간 운영.관리 방침</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">사이트맵</a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html">(주)롯데호텔 기업소개</a>
+                    </li>
+                </ul>
+                <div class="m__footerInfo">
+                    <ul class="">
+                        <li>
+                            <a href="./roomType.html">인재채용</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">신문고(제보)</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">제휴제안</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">개인정보처리방침</a>
+                        </li>
+                    </ul>
+                    <ul class="">
+                        <li>
+                            <a href="./roomType.html">영상정보처리기간 운영.관리 방침</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">사이트맵</a>
+                        </li>
+                        <li>
+                            <a href="./roomType.html">(주)롯데호텔 기업소개</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBot mx-1280">
+                <ul>
+                    <li>
+                        <a href="./roomType.html" class="footerBotLogo skyhillLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html" class="footerBotLogo signielLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html" class="footerBotLogo hotelLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html" class="footerBotLogo l7hotelLogo"></a>
+                    </li>
+                    <li>
+                        <a href="./roomType.html" class="footerBotLogo cityhotelLogo"></a>
+                    </li>
+                </ul>
+                <div class="footerBotInfoBox">
+                    <div class="footerBotInfo">
+                        <span>(주)호텔롯데 롯데리조트</span>
+                        <span>주소 : 서울특별시 중구 을지로 30</span> 
+                        <span>대표이사 : 김태홍</span> 
+                        <span>대표번호 : 1588-4355</span>
+                    </div>
+                    <div class="footerBotInfo">
+                        <span>사업자등록번호 : 104-85-27860</span>
+                        <span>통신판매신고번호 : 2004-서울중구-2802호</span>
+                    </div>
+                    <div class="footerBotInfo">
+                        <span>롯데리조트속초 : 033-634-1000</span>
+                        <span> 제주아트빌라스 : 064-731-9000</span>
+                        <span> 롯데리조트부여 : 041-939-1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    $(document).ready(function(){
+        //mainBannerSlide
+        var swiper = new Swiper(".bannerSwiper", {
+            loop:true,    
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        //eventSlide
+        var eventSwiper = new Swiper(".eventSwiper .swiper", {
+            slidesPerView: 1,
+            loop:true,
+            navigation: {
+                nextEl: ".eventSwiper .swiper-button-next",
+                prevEl: ".eventSwiper .swiper-button-prev",
+            },
+            breakpoints: {
+                //1280이상일 때 화면에 보여질 개수와, 간격
+                1280:{
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                768:{
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+
+        //promotionSlide
+        var promotionSwiper = new Swiper(".promotionSwiper .mySwiper", {
+            slidesPerView: 1,
+            loop:true,
+            navigation: {
+                nextEl: ".promotionSwiper .swiper-button-next",
+                prevEl: ".promotionSwiper .swiper-button-prev",
+            },
+            breakpoints: {
+                //1280이상일 때 화면에 보여질 개수와, 간격
+                1280:{
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                768:{
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            },
+            autoplay: {
+                delay: 25000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiperTopNum = $('.travelSwiper').find('.swiper-slide');
+	    var swiperSubNum = $('.listType2').find('.listType2');
+        //travelSlide
+        var travelSwiper = new Swiper(".travelSwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                travelSwiper: travelSwiper,
+            },
+        });
+
+        var TravelListSwiper = new Swiper(".listType2", {
+            direction: "vertical",
+            slidesPerView: 3,
+            // spaceBetween: 30,
+            mousewheel: false,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            watchSlidesProgress: true,
+            
+        });
+        $('.travelSwiper,.listType2').mouseenter(function(){
+            console.log("in")
+            travelSwiper.autoplay.stop();
+            TravelListSwiper.autoplay.stop();
+});
+        $('.travelSwiper,.listType2').mouseleave(function(){
+            console.log("out")
+            travelSwiper.autoplay.start();
+            TravelListSwiper.autoplay.start();
+});
+
+
+
+
+        //travel list + img 슬라이드 연동
+        travelSwiper.controller.control = TravelListSwiper;
+        TravelListSwiper.controller.control = travelSwiper;
+    })
+            
+    </script>
+</body>
+</html>
