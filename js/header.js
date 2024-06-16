@@ -14,56 +14,83 @@ $(document).ready(function(){
     function headerActive(){   
         //현재 스크롤 위치 구하기
         let $scrollPosition = $(document).scrollTop();
-        if(window.innerWidth <= 1280){
-            if($mobileTarget <= $scrollPosition){
-                console.log("스크롤 위치가 더 길때")
-                $header.css({
-                    'backgroundColor':'white',
-                    'color':'black',
-                })
-                $logo.attr('src','images/logo.png')
-                $hamBtnLine.css(
-                    'backgroundColor','#da291c'
-                )
-            }
-            else{
-                console.log('스크롤 위치가 더 짧을때')
-                $header.css({
-                    'backgroundColor':'transparent',
-                    'color':'white'
-                })
-                $logo.attr('src','images/logoWhite.png')
-                $hamBtnLine.css(
-                    'backgroundColor','white'
-                )
-            }
+        $header.css({
+            'backgroundColor':'white',
+            'color':'black',
+        })
+        $logo.attr('src','images/logo.png')
+        $hamBtnLine.css(
+            'backgroundColor','#da291c'
+        )
+        if($scrollPosition == 0){
+            $header.css({
+                'backgroundColor':'transparent',
+                'color':'white'
+            })
+            $logo.attr('src','images/logoWhite.png')
+            $hamBtnLine.css(
+                'backgroundColor','white'
+            )
         }
-    
-        //현재 스크롤 위치가 target보다 같거나 클때.
-        if(window.innerWidth >= 1280){
-            if($targetPc <= $scrollPosition){
-                $header.css({
-                    'backgroundColor':'white',
-                    'color':'black',
-                })
-                $logo.attr('src','images/logo.png')
-                $hamBtnLine.css(
-                    'backgroundColor','#da291c'
-                )
-            }
-            else{
-                $header.css({
-                    'backgroundColor':'transparent',
-                    'color':'white'
-                })
-                $logo.attr('src','images/logoWhite.png')
-                $hamBtnLine.css(
-                    'backgroundColor','white'
-                )
-            }
+        else{
+            $header.css({
+                'backgroundColor':'white',
+                'color':'black'
+            })
+            $logo.attr('src','images/logo.png')
         }
-    
     }
+
+    //     if(window.innerWidth <= 1280){
+    //         if($mobileTarget <= $scrollPosition){
+    //             console.log("스크롤 위치가 더 길때")
+    //             $header.css({
+    //                 'backgroundColor':'white',
+    //                 'color':'black',
+    //             })
+    //             $logo.attr('src','images/logo.png')
+    //             $hamBtnLine.css(
+    //                 'backgroundColor','#da291c'
+    //             )
+    //         }
+    //         else{
+    //             console.log('스크롤 위치가 더 짧을때')
+    //             $header.css({
+    //                 'backgroundColor':'transparent',
+    //                 'color':'white'
+    //             })
+    //             $logo.attr('src','images/logoWhite.png')
+    //             $hamBtnLine.css(
+    //                 'backgroundColor','white'
+    //             )
+    //         }
+    //     }
+    
+    //     //현재 스크롤 위치가 target보다 같거나 클때.
+    //     if(window.innerWidth >= 1280){
+    //         if($targetPc <= $scrollPosition){
+    //             $header.css({
+    //                 'backgroundColor':'white',
+    //                 'color':'black',
+    //             })
+    //             $logo.attr('src','images/logo.png')
+    //             $hamBtnLine.css(
+    //                 'backgroundColor','#da291c'
+    //             )
+    //         }
+    //         else{
+    //             $header.css({
+    //                 'backgroundColor':'transparent',
+    //                 'color':'white'
+    //             })
+    //             $logo.attr('src','images/logoWhite.png')
+    //             $hamBtnLine.css(
+    //                 'backgroundColor','white'
+    //             )
+    //         }
+    //     }
+    
+    // }
     
 
     //2. 햄버거 버튼 클릭시 메뉴 보임.
@@ -75,10 +102,10 @@ $(document).ready(function(){
         $header.css({
             'backgroundColor':'white',
         })
-        $logo.attr('src','images/logo.png')
         $hamBtnLine.css(
             'backgroundColor','#da291c'
         )
+        $logo.attr('src','images/logo.png')
         $mobileMenu.toggleClass('active')
         $backPan.toggleClass('active')
     }
@@ -86,7 +113,7 @@ $(document).ready(function(){
     //3. gnb hover시 depth2메뉴 보임.
     let $depth2 = $('.gnb .depth2');
     let $bgGnb = $('.bgGnb');
-
+    
     $header.mouseenter(menuBlock);
     $header.mouseleave(menuNone);
 
@@ -105,13 +132,24 @@ $(document).ready(function(){
             $bgGnb.css(
                 'height','20rem'
             )
+            if($scrollPosition == 0){
+                $header.css({
+                    'backgroundColor':'transparent',
+                    'color':'white'
+                }) 
+            }
+            else{
+                $header.css({
+                    'backgroundColor':'white',
+                    'color':'black'
+                })
+                $logo.attr('src','images/logo.png')
+            }
+            // if($targetPc <= $scrollPosition){
+
+            // }
         }
-        else{
-            console.log("ㄹㅇㅇ")
-            $header.css({
-                'backgroundColor':'transparent'
-            })
-        }
+
 
         // if($targetPc <= $scrollPosition){
         //     $header.css({
@@ -138,7 +176,31 @@ $(document).ready(function(){
             $bgGnb.css(
                 'height','0'
             )
+            if($scrollPosition == 0){
+                $header.css({
+                    'backgroundColor':'transparent',
+                    'color':'white'
+                }) 
+            }
+            else{
+                $header.css({
+                    'backgroundColor':'white',
+                    'color':'black'
+                })
+                $logo.attr('src','images/logo.png')
+            }
         }
+        // else{
+        //     console.log("ㄹㅇㅇ")
+        //     $header.css({
+        //         'backgroundColor':'white',
+        //         'color':'black'
+        //     })
+        //     $hamBtnLine.css(
+        //         'backgroundColor','#da291c'
+        //     )
+        //     $logo.attr('src','images/logo.png')
+        // }
         // if($targetPc <= $scrollPosition){
         //     console.log('ㅠㄹ')
         //     $header.css({
